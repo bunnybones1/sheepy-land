@@ -7,7 +7,7 @@ import { Connected } from "./views/Connected";
 import { SequenceBoilerplate } from "boilerplate-design-system";
 import View3D from "./components/3d/View3D";
 import ItemViewer3D from "./components/3d/ItemViewer3D";
-import PickAxe from "./components/3d/PickAxe";
+import Chest from "./components/3d/Chest";
 
 export default function Layout() {
   return (
@@ -28,7 +28,7 @@ function App() {
     >
       <View3D>
         <ItemViewer3D>
-          <PickAxe />
+          <Chest />
         </ItemViewer3D>
       </View3D>
       {isConnected ? <Connected /> : <NotConnected />}
