@@ -1,6 +1,6 @@
-# Sequence WebSDK Embedded Wallet React Starter Boilerplate
+# Sequence Demo Adventure Assets
 
-Starter Sequence Embedded Wallet boilerplate that uses [Sequence WebSDK](https://github.com/0xsequence/web-sdk) with React.
+Assets meant to be hosted and used by projects, tokens and metadata.
 
 ## Quickstart
 
