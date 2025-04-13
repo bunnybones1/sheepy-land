@@ -9,6 +9,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
+    "watch": "nodemon --watch public/** --ext glb,gltf --exec \"pnpm run update-models-list\"",
+    "update-models-list": "tsx scripts/update-models-list.ts",
     "postinstall": "(cp -n .env.example .env) || echo already exists"
   },
   "dependencies": {
@@ -20,6 +22,7 @@
     "@react-three/fiber": "^9.1.2",
     "@react-three/postprocessing": "^3.0.4",
     "@tanstack/react-query": "^5.72.2",
+    "@uidotdev/usehooks": "^2.4.1",
     "boilerplate-design-system": "github:0xsequence-demos/boilerplate-design-system#42564000bc8653348b1fb7d25885908faa5fa355",
     "ethers": "6.13.5",
     "react": "^19.1.0",
@@ -31,6 +34,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
+    "@tailwindcss/vite": "^4.1.3",
+    "@types/node": "^22.14.1",
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
     "@types/three": "^0.175.0",
@@ -42,11 +47,12 @@
     "eslint-plugin-react-hooks": "5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "nodemon": "^3.1.9",
     "prettier": "^3.5.3",
     "tailwindcss": "^4.1.3",
+    "tsx": "^4.19.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1",
-    "@tailwindcss/vite": "^4.1.3",
     "vite": "^6.2.5"
   },
   "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
