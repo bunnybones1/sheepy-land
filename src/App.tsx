@@ -11,10 +11,13 @@ import DynamicItem from "./components/3d/DynamicItem";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
 import { modelsList } from "./modelsList";
+import CopyableText from "./components/CopyableText";
+import { Toaster } from "sonner";
 export default function Layout() {
   return (
     <SequenceConnect config={config}>
       <App />
+      <Toaster />
     </SequenceConnect>
   );
 }
@@ -34,6 +37,7 @@ function App() {
         options={modelsList}
         onValueChange={(opt) => setModelName(opt)}
       ></Select>
+      <CopyableText value={`${window.location.origin}/${modelName}`} />
       <View3D>
         <ItemViewer3D>
           <DynamicItem gltfUrl={`/${modelName}`} />
