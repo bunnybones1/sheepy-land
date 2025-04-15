@@ -16,13 +16,11 @@
   "dependencies": {
     "0xsequence": "2.3.8",
     "@0xsequence/connect": "^5.1.0",
-    "@0xsequence/design-system": "^2.1.6",
     "@0xsequence/network": "^2.3.8",
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
     "@react-three/postprocessing": "^3.0.4",
     "@tanstack/react-query": "^5.72.2",
-    "@uidotdev/usehooks": "^2.4.1",
     "boilerplate-design-system": "github:0xsequence-demos/boilerplate-design-system#42564000bc8653348b1fb7d25885908faa5fa355",
     "ethers": "6.13.5",
     "react": "^19.1.0",
@@ -30,8 +28,7 @@
     "sonner": "^2.0.3",
     "three": "^0.175.0",
     "viem": "^2.26.3",
-    "wagmi": "^2.14.16",
-    "zod": "^3.24.2"
+    "wagmi": "^2.14.16"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",

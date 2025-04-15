@@ -10,7 +10,7 @@ function View3D(props: { children: ReactNode }) {
     <Canvas style={{ aspectRatio: 1, borderRadius: "20px" }}>
       <Suspense fallback={<Loader3D />}>
         <Environment
-          files={`/env-item.hdr`}
+          files={`/env-grass-plane.hdr`}
           background
           backgroundIntensity={0.5}
         />
